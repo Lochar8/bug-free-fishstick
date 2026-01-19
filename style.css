@@ -26,7 +26,7 @@
     --semantics-text-colour-brand: #00AFFF;
     --semantics-text-colour-tertiary:#414141;
     --semantics-text-colour-button1:#010101;
-
+    --semantics-surface-button1: #010101;
     --semantics-surface-button2: #EFEFEF;
 
     --semantics-text-regular-size: 20px;
@@ -51,13 +51,8 @@
     --components-button-edges-radius: 9px;
     --components-cards-padding-vertical: 32px;
     --components-cards-padding-horizontal: 32px;
-    --components-button-colours-fill-onhover: #002C40;
-    --components-buttons-button-type-1-colour-default: #010101;
     --components-buttons-button-type-2-colour-border: #010101;
-    --components-buttons-button-type-2-colour-inverse: #002C40;
-    --components-buttons-button-type-3-colour-default: #00AFFF;
     --components-buttons-button-type-3-colour-inverse: #002C40;
-    --components-buttons-button-type-2-colour-default: #00AFFF;
     --primitives-font-family-primary: Elza, Arial, sans-serif;
 
 }
@@ -161,7 +156,7 @@ body {
     padding: var(--components-buttons-button-type-1-padding-btn-vertical) var(--components-buttons-button-type-1-padding-horizontal);
     border-radius: var(--components-button-edges-radius);
     border: var(--semantics-border-weight-small) solid var(--semantics-border-colour-primary);
-    background: var(--components-buttons-button-type-2-colour-default);
+    background: var(--semantics-surface-brand);
     font-size: var(--semantics-text-regular-size);
     font-style: normal;
     font-weight: 600;
@@ -171,7 +166,7 @@ body {
 }
 
 .card__button:hover {
-    background: var(--components-buttons-button-type-2-colour-inverse);
+    background: var(--components-buttons-button-type-3-colour-inverse);
 	color: var(--semantics-text-colour-secondary);
 	border: var(--semantics-border-weight-small) solid var(--semantics-border-colour-secondary);
 }
@@ -333,7 +328,7 @@ body {
     gap: 10px;
     border-radius: var(--components-button-edges-radius);
     border: var(--semantics-border-weight-small) solid var(--semantics-border-colour-tertiary);
-    background: var(--components-buttons-button-type-1-colour-default);
+    background: var(--semantics-surface-button1);
     color: var(--semantics-text-colour-secondary);
     font-family: var(--primitives-font-family-primary);
     font-size: var(--semantics-text-regular-size);
@@ -348,7 +343,7 @@ body {
 .nav-link:hover {
     border-radius: var(--components-button-edges-radius);
     border: var(--semantics-border-weight-small) solid var(--semantics-border-colour-tertiary);
-    background: var(--semantics-surface-primary);
+    background: var(--semantics-surface-button2);
     color: var(--semantics-text-colour-button1);
 }
 
@@ -416,7 +411,7 @@ body {
     padding: var(--components-buttons-button-type-1-padding-btn-vertical) var(--components-buttons-button-type-1-padding-horizontal);
     border-radius: var(--components-button-edges-radius);
     border: var(--semantics-border-weight-small) solid var(--components-buttons-button-type-2-colour-border);
-    background: var(--components-buttons-button-type-2-colour-default);
+    background: var(--semantics-text-colour-brand);
     color: var(--semantics-text-colour-button1);
     font-family: var(--primitives-font-family-primary);
 }
@@ -718,7 +713,7 @@ body {
     justify-content: space-between;
     border-radius: var(--components-button-edges-radius);
     border: var(--semantics-border-weight-small) solid var(--semantics-border-colour-primary);
-    background: var(--components-buttons-button-type-3-colour-default);
+    background: var(--semantics-surface-brand);
     color: var(--semantics-text-colour-button1);
     font-family: var(--primitives-font-family-primary);
     font-size: var(--semantics-text-regular-size);
@@ -764,4 +759,5 @@ body {
 .sources-button:hover .sources-button-icon path {
     stroke: var(--semantics-colours-btn-text);
 }
+
 
